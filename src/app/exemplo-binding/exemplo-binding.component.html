@@ -1,0 +1,14 @@
+<div>N1: {{n1}}</div>
+<div>N2: {{n2}}</div>
+<div>Soma de {{n1}} com {{n2}} = {{n1+n2}}</div>
+
+<button (click) = "alteraValores()">Altera valores</button>
+<button (click) = "diminuiN1()"[disabled]="n1==0">Diminui N1</button>
+<div>
+    <img [src]="retornaImg()" width="200px">
+</div>
+<div>
+    <input type="text" [(ngModel)]="texto">
+    <h1>{{texto}}</h1>
+</div>
+
